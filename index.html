@@ -1,12 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Test</title>
-  </head>
-  <body>
-    <h1>It works</h1>
-    <p>This is a GitHub Pages test page.</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Hampshire Buddhist Society</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #3f3f3f;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      margin-left: auto;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #13027a;
+      font-weight: 600;
+    }
+
+    .banner {
+      height: 400px;
+      background-image: url("images/banner.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: centre;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: centre;
+      gap: 40px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      padding: 10px 18px;
+      background: #13027a;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.8rem;
+      text-align: centre;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="/">
+    <img src="images/logo.jpg" alt="Hampshire Buddhist Society">
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="blog.html">Blog</a>
+    <a href="links.html">Links</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="banner"></div>
+
+<main>
+  <p>
+    The object of the Hampshire Buddhist Society is to make known
+    the principles of Buddhism and to encourage the study and
+    practice of those principles. We comprise both a Theravada
+    and a Zen group.
+  </p>
+
+  <div class="buttons">
+    <a href="about-the-hbs-theravada-group.html">Theravada Group</a>
+    <a href="about-the-hbs-zen-group.html">Zen Group</a>
+  </div>
+
+  <p>
+    In addition to their weekly Zoom meetings, the Theravada group
+    arranges an in-person silent retreat in Romsey on the second
+    Saturday of every month.
+  </p>
+
+  <p>
+    The Society does not charge for meetings and relies on donations
+    to cover its costs.
+  </p>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="A5ZQDN8EBYNEE">
+    <input type="image"
+           src="images/btn_donateCC_LG.gif"
+           alt="Donate with PayPal">
+  </form>
+</main>
+
+<footer>
+  Main image copyright Roberta Mansell.
+  Text copyright Hampshire Buddhist Society unless otherwise stated.
+</footer>
+
+</body>
 </html>
