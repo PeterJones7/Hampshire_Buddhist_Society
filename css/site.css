@@ -60,12 +60,16 @@ a:hover {
   width: 100%;
   height: 420px;
   overflow: hidden;
+  background-color: #fff;   /* white background for padding area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* modern, reliable replacement for CSS background */
+  object-fit: contain;   /* preserve entire image, add padding if needed */
   display: block;
 }
 
