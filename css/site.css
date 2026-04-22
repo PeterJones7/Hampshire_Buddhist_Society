@@ -40,14 +40,35 @@ a:hover {
   margin-left: auto;
 }
 
+/* Updated menu style: softer grey, cleaner font */
 .main-nav a {
   margin-left: 22px;
-  font-weight: 600;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #666;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #333;
+  text-decoration: none;
 }
 
 .main-nav a.active {
-  text-decoration: underline;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid #777;
+  padding-bottom: 2px;
 }
+
+/* Optional: if you decide the original menu was uppercase, uncomment this
+.main-nav a {
+  text-transform: uppercase;
+  font-size: 0.88rem;
+}
+*/
 
 /* Banner */
 .banner {
@@ -83,25 +104,32 @@ a:hover {
   font-size: 1.05rem;
 }
 
+/* Button row: centred by default so Home buttons sit closer together */
 .button-row {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin: 28px 0;
+  justify-content: center;
+  gap: 24px;
+  margin: 28px auto;
   flex-wrap: wrap;
 }
 
+/* Kept for compatibility - still useful if you want an explicit class */
+.button-row.center {
+  justify-content: center;
+}
+
+/* Buttons: changed to neutral grey */
 .button {
   display: inline-block;
   padding: 10px 18px;
-  background: #13027a;
-  color: white;
+  background: #6f6f6f;
+  color: #fff;
   border-radius: 4px;
   font-size: 0.95rem;
 }
 
 .button:hover {
-  background: #0f025f;
+  background: #595959;
 }
 
 .donate {
@@ -123,7 +151,7 @@ a:hover {
 .notice {
   background: #fff;
   border: 1px solid #e2e2e2;
-  border-left: 4px solid #13027a;
+  border-left: 4px solid #6f6f6f;
   padding: 14px 16px;
   border-radius: 4px;
 }
@@ -140,6 +168,32 @@ blockquote {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #666;
+}
+
+/* Links page list */
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-left: 4px solid #6f6f6f;
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.link-title {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.link-list p {
+  margin: 8px 0 0;
 }
 
 /* Footer */
@@ -173,7 +227,6 @@ blockquote {
   }
 
   .button-row {
-    gap: 20px;
+    gap: 18px;
   }
 }
-``
